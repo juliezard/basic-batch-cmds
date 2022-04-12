@@ -14,4 +14,10 @@ wmic process where name="firefox.exe" call terminate
 :: BATCH: Kill Chrome
 wmic process where name="chrome.exe" call terminate
 
+:: BATCH: caffeine
+:: Starts caffeine.exe with 240 seconds between presses, not when locked, and from 7am-5pm
+:: moreinfo at https://www.zhornsoftware.co.uk/caffeine/
+cd "C:\Users\jtran\Downloads\caffeine"
+start caffeine.exe 240 -notwhenlocked -activehours:.......xxxxxxxxxx........
+
 pause
