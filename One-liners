@@ -1,0 +1,14 @@
+:: One liner commands for windows 
+:: v1
+:: 2022-04-12
+
+
+::::::::::::::::::::
+:: BATCH COMMANDS ::
+::::::::::::::::::::
+
+:: BATCH: Kill Firefox
+wmic process where name="firefox.exe" call terminate
+
+:: BATCH: Kill Chrome
+wmic process where name="chrome.exe" call terminate
