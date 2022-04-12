@@ -2,6 +2,7 @@
 :: v1
 :: 2022-04-12
 
+:: @echo off
 
 ::::::::::::::::::::
 :: BATCH COMMANDS ::
@@ -12,3 +13,5 @@ wmic process where name="firefox.exe" call terminate
 
 :: BATCH: Kill Chrome
 wmic process where name="chrome.exe" call terminate
+
+pause
