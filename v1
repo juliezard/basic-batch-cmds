@@ -14,6 +14,14 @@ wmic process where name="firefox.exe" call terminate
 :: BATCH: Kill Chrome
 wmic process where name="chrome.exe" call terminate
 
+:: Start Chrome and Notepad++
+@echo off
+cd "C:\Program Files\Google\Chrome\Application"
+start chrome.exe
+
+cd "C:\Program Files (x86)\Notepad++"
+start notepad++.exe
+
 :: BATCH: caffeine
 :: Starts caffeine.exe with 240 seconds between presses, not when locked, and from 7am-5pm
 :: more nfo at https://www.zhornsoftware.co.uk/caffeine/
