@@ -18,7 +18,6 @@ wmic process where name="chrome.exe" call terminate
 @echo off
 cd "C:\Program Files\Google\Chrome\Application"
 start chrome.exe
-
 cd "C:\Program Files (x86)\Notepad++"
 start notepad++.exe
 
